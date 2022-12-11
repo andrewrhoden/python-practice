@@ -7,9 +7,13 @@
 #Average - Create a function that takes a list as an argument and returns the average of all the values in the list.  For example multiples([1,2,3,4]) should return #2.5
 def sumof_lst(lst):
     return sum(lst)/len(lst)
-
 #Length - Create a function that takes a list as an argument and returns the length of the list.  For example length([1,2,3,4]) should return 4
-
+def lstlength(lst):
+    if len(lst) ==0:
+        return False
+    else:
+        if len(lst) >0:
+            return len(lst)
 #Minimum - Create a function that takes a list as an argument and returns the minimum value in the list.  If the passed list is empty, have the function return false.  #For example minimum([1,2,3,4]) should return 1; minimum([-1,-2,-3]) should return -3.
 #
 #Maximum - Create a function that takes a list as an argument and returns the maximum value in the list.  If the passed list is empty, have the function return false.  #For example maximum([1,2,3,4]) should return 4; maximum([-1,-2,-3]) should return -1.
