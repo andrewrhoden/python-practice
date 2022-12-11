@@ -5,6 +5,8 @@
 #SumTotal - Create a function that takes a list as an argument and returns the sum of all the values in the list.  For example sum_total([1,2,3,4]) should return 10
 
 #Average - Create a function that takes a list as an argument and returns the average of all the values in the list.  For example multiples([1,2,3,4]) should return #2.5
+def sumof_lst(lst):
+    return sum(lst)/len(lst)
 
 #Length - Create a function that takes a list as an argument and returns the length of the list.  For example length([1,2,3,4]) should return 4
 
@@ -22,6 +24,21 @@
   #If the number is a multiple of 3, print “Fizz” instead of the number.
   #If the number is a multiple of 5, print “Buzz” instead of the number.
   #If the number is a multiple of 3 and 5, print “FizzBuzz” instead of the number.
+
+
+for number in range(1, 101):
+  if number%3 ==0 and number%5==0:
+      print(f"{number}Fizz-Buzz")
+  elif number%3==0:
+    print(f"{number} fizz")
+    
+  elif number%5==0:
+      print(f"{number} Buzz")
+  else:
+    print(number)
+  
+
+
 
 #Fibonacci- The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, #starting from 0 and 1. That is,
   #F(0) = 0, F(1) = 1
