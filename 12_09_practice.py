@@ -18,6 +18,16 @@ def lstlength(lst):
 #
 #Maximum - Create a function that takes a list as an argument and returns the maximum value in the list.  If the passed list is empty, have the function return false.  #For example maximum([1,2,3,4]) should return 4; maximum([-1,-2,-3]) should return -1.
 
+def maxnumber(lst):
+    maxnum=lst[0]
+    if len(lst)==0:
+        return False
+    else:
+        for num in lst:
+            if num> maxnum:
+                maxnum=num
+        return maxnum
+
 #Ultimateaalyze - Create a function that takes a list as an argument and returns a dictionary that has the sumTotal, average, minimum, maximum ad length of the list.
 
 #ReverseList - Create a function that takes a list as a argument and return a list in a reversed order.  Do this without creating a empty temporary list.  For example #reverse([1,2,3,4]) should return [4,3,2,1]. This challenge is known to appear during basic technical interviews.
