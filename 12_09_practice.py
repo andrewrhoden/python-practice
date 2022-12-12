@@ -15,6 +15,18 @@ def lstlength(lst):
         if len(lst) >0:
             return len(lst)
 #Minimum - Create a function that takes a list as an argument and returns the minimum value in the list.  If the passed list is empty, have the function return false.  #For example minimum([1,2,3,4]) should return 1; minimum([-1,-2,-3]) should return -3.
+def min_in_list(lst):
+    Min=lst[0]
+    if len(lst) ==0:
+        return False
+    else: 
+        for element in lst:
+            if element<min:
+                min =element
+        return min
+
+
+
 #
 #Maximum - Create a function that takes a list as an argument and returns the maximum value in the list.  If the passed list is empty, have the function return false.  #For example maximum([1,2,3,4]) should return 4; maximum([-1,-2,-3]) should return -1.
 
