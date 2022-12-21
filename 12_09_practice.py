@@ -52,6 +52,21 @@ def maxnumber(lst):
 
 #Ultimateaalyze - Create a function that takes a list as an argument and returns a dictionary that has the sumTotal, average, minimum, maximum ad length of the list.
 
+dict ={}
+def ultimate(lst):
+  for i in range(len(lst)):
+    sumTotal= sum(lst)
+    average =sumTotal/len(lst)
+    maximum =max(lst)
+    minimum =min(lst)
+    lst_length= len(lst)
+    dict[ 'SumTotal']=sumTotal
+    dict['Average'] =average
+    dict['Maximum_in_lst']=maximum
+    dict['Minimum_in_lst']=minimum
+    dict['List_length']=lst_length
+  print (dict)
+
 #ReverseList - Create a function that takes a list as a argument and return a list in a reversed order.  Do this without creating a empty temporary list.  For example #reverse([1,2,3,4]) should return [4,3,2,1]. This challenge is known to appear during basic technical interviews.
 
 #Ispalindrome- Given a string, write a python function to check if it is palindrome or not. A string is said to be palindrome if the reverse of the string is the same as string. For example, “radar” is a palindrome, but “radix” is not a palindrome.
