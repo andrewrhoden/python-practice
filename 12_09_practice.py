@@ -76,18 +76,18 @@ def ultimate(lst):
   #If the number is a multiple of 5, print “Buzz” instead of the number.
   #If the number is a multiple of 3 and 5, print “FizzBuzz” instead of the number.
 
-
-for number in range(1, 101):
-  if number%3 ==0 and number%5==0:
-      print(f"{number}Fizz-Buzz")
-  elif number%3==0:
-    print(f"{number} fizz")
+def fizzbuzz():
+    for number in range(1, 101):
+        if number%3 ==0 and number%5==0:
+            print(f"{number}Fizz-Buzz")
+        elif number%3==0:
+            print(f"{number} fizz")
+            
+        elif number%5==0:
+            print(f"{number} Buzz")
+        else:
+            print(number)
     
-  elif number%5==0:
-      print(f"{number} Buzz")
-  else:
-    print(number)
-  
 
 
 
