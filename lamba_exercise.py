@@ -24,6 +24,7 @@ print(f" The languages with int values: {int_form}")
 ###Transform the list so that it contains the tuples in the form,
 # ("language in all lower case", length of the language string)###
  
+print(list(map(lambda x:(x[0].lower(),len(x[0])),prog_lang)))
 
 ###test regular functions###
 # def check(lst):
@@ -35,13 +36,15 @@ print(f" The languages with int values: {int_form}")
 #     print (example)
     
 # check(prog_lang)
-lst=[]
-def newlst(lst_val):
-    for i in lst_val:
-        lst.append((i[0].lower(),len(i[0])))
-    print(lst)
+# lst=[]
+# def newlst(lst_val):
+#     for i in lst_val:
+#         lst.append((i[0].lower(),len(i[0])))
+#     print(lst)
 
-convertnew=filter(newlst(prog_lang),prog_lang)
+# convertnew=filter(newlst(prog_lang),prog_lang)
+
+
 
 
 ###Generate a tuple in the form,("All languages separated by commas","All versions separated by commas")##
