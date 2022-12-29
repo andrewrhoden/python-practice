@@ -32,21 +32,15 @@ print(list(map(lambda x:(x[0].lower(),len(x[0])),prog_lang)))
 #     for i in (prog_lang): 
 #         a,b= (str(i[0].lower()),len(i[0]))
 #         example.append(((a,b)))
-        
-#     print (example)
+      #print (example)
     
-# check(prog_lang)
-# lst=[]
-# def newlst(lst_val):
-#     for i in lst_val:
-#         lst.append((i[0].lower(),len(i[0])))
-#     print(lst)
-
-# convertnew=filter(newlst(prog_lang),prog_lang)
-
-
-
-
+ 
 ###Generate a tuple in the form,("All languages separated by commas","All versions separated by commas")##
 # ##
 #('Python,Java,JavaScript,Scala', '3.8,13,2019,2.13')
+ 
+diff_langs= list(map(lambda x: (x[0]),prog_lang))
+lang_values=list(map(lambda x: (str(x[1])),prog_lang))
+concat= (','.join(diff_langs),','.join(lang_values))
+
+print (concat)
